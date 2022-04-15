@@ -10,153 +10,7 @@
 		
 				
 		
-	    <script type="text/javascript">
-	        
-	        
-	        function sprawdzWszystko()
-	        {
-	            var tab = document.getElementsByClassName("pole");
-	            
-	            var Test = 0;
-
-                
-	            
-	            
-	            for(i=0;i<tab.length;i++)
-	            {
-                    if(sprawdz(tab[i].id)==false && tab[i].id!="uwagi")
-                    {
-                        Test++;
-                        alert(Test+" "+tab[i].id);
-                    }
-	                
-	            }
-
-                alert("!!!!"+Test);
-
-                if(Test==0)
-                {
-                    var button = document.getElementById("wyslij");
-                    button.disabled = false;
-                }
-	            
-	        }
 	    
-	        function sprawdz(id)
-	        {
-	            
-	            var element = document.getElementById(id);
-	            
-	            if(element === null)
-	            {
-	                return;
-	            }
-	            else if(element.id === 'uwagi')
-	            {
-	                element.style.backgroundColor = "green";
-	                return;
-	            }
-	            
-	            var text = element.value;
-	            
-	            
-	            
-	            var Wyrazenie = /^[0-9]{9}$/g;
-	            
-	            
-	            switch (element.id) {
-                  case 'telefon':
-                    var Wyrazenie = /^[0-9]{9}$/g;
-                    break;
-                    
-                  case 'dataurodzenia':
-                      
-                      //text = text.replace("/",'X');
-                      
-                      //text = text.replace("/",'X');
-                      
-                      // /^[0-3]{1}[0-9]{1}[X]{1}[0-1]{1}[0-9]{1}[X]{1}[0-9]{4}$/g;
-                    
-                      var Wyrazenie = /^([0-3]{1}[0-9]{1})\/([0-1]{1}[0-9]{1})\/([0-9]{4})$/g;
-                      
-                      break;
-                      
-                  case 'imie':
-                      var Wyrazenie = /^[A-z]{1}[a-z]{1,}$/g;
-                      break;
-                      
-                      
-                 case 'nazwisko':
-                      var Wyrazenie = /^[A-z]{1}[a-z]{1,}$/g;
-                      break;
-                      
-                      
-                      
-                      case 'plec':
-                      var Wyrazenie = /^[Kk]|[Mm]$/g;
-                      break;
-                      
-                      case 'ulica':
-                      var Wyrazenie = /^[A-Z]{1}[a-zA-z]*$/g;
-                      break;
-                      
-                      case 'numerdomu':
-                      var Wyrazenie = /^[0-9]{1,}$/g;
-                      break;
-                      
-                      
-                      case 'numermieszkania':
-                      var Wyrazenie = /^[0-9]{1,}$/g;
-                      break;
-                      
-                      case 'miasto':
-                      var Wyrazenie = /^[A-Z]{1}[a-z]*$/g;
-                      break;
-                      
-                      case 'nazwauslugi':
-                      var Wyrazenie = /^[A-Z]{1}[a-zA-Z0-9]*$/g;
-                      break;
-                      
-                      case 'cena':
-                      var Wyrazenie = /^[0-9]{1,10}$/g;
-                      break;
-                      
-                      case 'waluta':
-                      var Wyrazenie = /^[A-Z]{1,3} $/g;
-                      break;
-                      
-                      case 'ilosc':
-                      var Wyrazenie = /^[0-9]{1,10}$/g;
-                      break;
-                      
-                      
-                      case 'vat':
-                      var Wyrazenie = /^(([0-9]{1,2})|([1]{1}[0]{2}))$/g;
-                      break;
-                      
-                 
-                  default:
-                    console.log("niema");
-                    }
-	            
-	            
-	            var wynik = Wyrazenie.test(text);
-	            
-	            if(wynik)
-	            {
-	                element.style.backgroundColor = "green";
-                    return true;
-	            }
-	            else
-	            {
-	                element.style.backgroundColor = "red";
-                    return false;
-	            }
-	        }
-	        
-	        
-	    
-	    </script>
 		
 		
 		
@@ -180,12 +34,15 @@
 			<?php
 			$color = "red";
 			echo "My car is " . $color . "<br>";
-			echo "My house is " . $COLOR . "<br>";
-			echo "My boat is " . $coLOR . "<br>";
+			echo "My house is " . $color . "<br>";
+			echo "My boat is " . $color . "<br>";
+			
+			
+			
 			?>
 
 
-		    <form action="adres" method="post">
+		    <form action="welcome.php" method="post">
 	            <div class = "warstwa1">
     	        
 	            <div class="komorkaformularz">
@@ -293,7 +150,7 @@
     	        </div>
     	        
     	        <div class="komorkaformularz">
-                    <input type="checkbox" name="prawo_jazdy"><br>
+                    <input type="checkbox" id="prawo_jazdy" name="prawo_jazdy"><br>
     	        </div>
     	            
     	    </div>
@@ -305,7 +162,7 @@
     	        </div>
     	        
     	        <div class="komorkaformularz">
-                    <input class="pole" id="telefon" type="text"><br>
+                    <input class="pole" id="telefon" name="telefon" type="text"><br>
     	        </div>
     	            
     	    </div>
@@ -317,7 +174,7 @@
     	        </div>
     	        
     	        <div class="komorkaformularz">
-                    <input id="nazwauslugi" class="pole" type="text"><br>
+                    <input id="nazwauslugi" class="pole" type="text" name="nazwauslugi"><br>
     	        </div>
     	        
     	        <div class="komorkaformularz">
@@ -325,7 +182,7 @@
     	        </div>
     	        
     	        <div class="komorkaformularz">
-                    <input id="cena" class="pole" type="text"><br>
+                    <input id="cena" class="pole" type="text" name="cena"><br>
     	        </div>
     	        
     	        <div class="komorkaformularz">
@@ -333,7 +190,7 @@
     	        </div>
     	        
     	        <div class="komorkaformularz">
-                    <input id="ilosc" class="pole" type="text"><br>
+                    <input id="ilosc" class="pole" type="text" name="ilosc"><br>
     	        </div>
     	        
     	        <div class="komorkaformularz">
@@ -341,7 +198,7 @@
     	        </div>
     	        
     	        <div class="komorkaformularz">
-                    <input id="vat" class="pole" type="text"><br>
+                    <input id="vat" class="pole" type="text" name="vat"><br>
     	        </div>
     	            
     	    </div>
@@ -369,7 +226,7 @@
     	        </div>
     	        
     	        <div class="komorkaformularz">
-                    <input id="wyslij" type="submit" name ="p3" value="Wyślij" disabled="true" >
+                    <input id="wyslij" type="submit" name ="p3" value="Wyślij" >
 	                   <input type="hidden" name ="ukryte" value="0">
     	        </div>
     	        
