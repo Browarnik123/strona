@@ -1,0 +1,76 @@
+#kontener {
+  width: 100%;
+  display: table;
+}
+
+.warstwa1{
+    display: table-row;
+}
+
+.komorka1{
+    
+    display: table-cell;
+padding: 10px;
+text-align: justify;
+border: 1px solid black;
+}
+
+.komorka2{
+    display: table-cell;
+padding: 10px;
+text-align: justify;
+border: 1px solid black;
+}
+
+.komorka3{
+    display: table-cell;
+padding: 10px;
+text-align: justify;
+border: 1px solid black;
+}
+
+.komorka4{
+    display: table-cell;
+padding: 10px;
+text-align: justify;
+border: 1px solid black;
+}
+
+.komorkazdjecie{
+    display: table-cell;
+text-align: center;
+
+}
+
+.obrazekgaleria{
+    margin:30px;
+    margin-right:100px;
+}
+
+#kontener2 {
+    margin-left:20%;
+  margin-right:20%;
+  width: 40%;
+  display: table;
+  margin-right:30%;
+}
+
+#kontener3 {
+border: 1px solid black;
+  display: table;
+}
+
+.komorkaformularz
+{
+    vertical-align: text-top;
+    display: table-cell;
+text-align: center;
+width: 100px;
+padding: 30px;
+}
+.formularzpole
+{
+    vertical-align: text-top;
+    margin-right:20px;
+    text-align:justify;
+}

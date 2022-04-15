@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="testowy2.xslt"?>
+<Dane xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<Date>
+    <Day>02 </Day>
+    <Month>11 </Month>
+	<Year>22 </Year>
+</Date>
+
+
+<Service>
+	<Name>Grzybobranie1</Name>
+	<PKWIU>1</PKWIU>
+	<Jm>1</Jm>
+	<Quantity>2</Quantity>
+	<Price>50</Price>
+	<Vatp>23</Vatp>
+</Service>
+
+<Service>
+	<Name>Grzybobranie2</Name>
+	<PKWIU>1</PKWIU>
+	<Jm>1</Jm>
+	<Quantity>4</Quantity>
+	<Price>20</Price>
+	<Value>100</Value>
+	<Vatp>23</Vatp>
+</Service>
+
+<Service>
+	<Name>Grzybobranie3</Name>
+	<PKWIU>1</PKWIU>
+	<Jm>1</Jm>
+	<Quantity>3</Quantity>
+	<Price>10</Price>
+	<Value>100</Value>
+	<Vatp>23</Vatp>
+</Service>
+
+<Service>
+	<Name>Grzybobranie4</Name>
+	<PKWIU>1</PKWIU>
+	<Jm>1</Jm>
+	<Quantity>2</Quantity>
+	<Price>60</Price>
+	<Value>100</Value>
+	<Vatp>23</Vatp>
+</Service>
+
+<Service>
+	<Name>Grzybobranie5</Name>
+	<PKWIU>1</PKWIU>
+	<Jm>1</Jm>
+	<Quantity>1</Quantity>
+	<Price>70</Price>
+	<Value>100</Value>
+	<Vatp>23</Vatp>
+</Service>
+
+<Osoba>
+	<Imie>Anna</Imie>
+	<Nazwisko>Piotrowska</Nazwisko>
+</Osoba>
+
+<Osoba>
+	<Imie>Piotr</Imie>
+	<Nazwisko>Pajukty</Nazwisko>
+</Osoba>
+
+
+<Osoba>
+	<Imie>Piotr</Imie>
+	<Nazwisko>Janowski</Nazwisko>
+</Osoba>
+
+<Osoba>
+	<Imie>Anna</Imie>
+	<Nazwisko>Piotrowska</Nazwisko>
+</Osoba>
+
+<Osoba>
+	<Imie>Piotr</Imie>
+	<Nazwisko>Pajukty</Nazwisko>
+</Osoba>
+
+</Dane>

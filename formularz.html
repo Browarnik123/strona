@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>MateuszPiwowarski200862</title>
+	</head>
+	<body>
+	    <a href="index.html">
+	       Powrót
+	   </a>
+	   <br>
+	   <br>
+	   
+	   
+	   <table border="2px">
+	       <tr>
+	       <td>
+	       <form action="adres" method="post">
+	       
+	       <table>
+	           <tr>
+	               <td>
+	                   imię:
+	               </td>
+	               <td>
+	                   <input type="text" name="imie"><br>
+	               </td>
+	           </tr>
+	           
+	           <tr>
+	               <td>
+	                   nazwisko:
+	               </td>
+	               <td>
+	                   <input type="text" name="nazwisko"><br>
+	               </td>
+	           </tr>
+	           
+	           <tr>
+	               <td style="vertical-align:top">
+	                   płeć:
+	               </td>
+	               <td>
+	                   <table>
+	                       <tr>
+	                           <td>
+	                               K
+	                           </td>
+	                           
+	                           <td >
+	                               <input type="radio" name="plec" value="k"><br>
+	                           </td>
+	                           
+	                       </tr>
+	                       
+	                       <tr>
+	                           <td>
+	                               M
+	                           </td>
+	                           
+	                           <td>
+	                               <input type="radio" name="plec" value="m"><br>
+	                           </td>
+	                           
+	                       </tr>
+	                   
+	                   
+	                   </table>
+	               </td>
+	           </tr>
+	           
+	           <tr>
+	               <td>
+	                   ulica:
+	               </td>
+	               <td>
+	                   <input type="text" name="ulica"><br>
+	               </td>
+	           </tr>
+	           <tr>
+	               <td>
+	                   numer domu:
+	               </td>
+	               <td>
+	                   <input type="number" name="imie"><br>
+	               </td>
+	           </tr>
+	           <tr>
+	               <td>
+	                   numer mieszkania:
+	               </td>
+	               <td>
+	                   <input type="number" name="numer_mieszkania"><br>
+	               </td>
+	           </tr>
+	           <tr>
+	               <td>
+	                   miasto:
+	               </td>
+	               <td>
+	                   <select name="miasto"><br>
+	                    <option>Warszawa</option>
+	                    <option>Kraków</option>
+	                    <option>Poznań</option>
+	                   </select><br>
+	               </td>
+	           </tr>
+	           <tr>
+	               <td>
+	                   data urodzenia:
+	               </td>
+	               <td>
+	                   <input type="date" name="data_urodzenia"><br>
+	               </td>
+	           </tr>
+	           <tr>
+	               <td>
+	                   prawo jazdy:
+	               </td>
+	               <td>
+	                   <input type="checkbox" name="prawo_jazdy"><br>
+	               </td>
+	           </tr>
+	           <tr>
+	               <td>
+	                   telefon:
+	               </td>
+	               <td>
+	                   <input type="text" name="imie" maxlength="9" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"><br>
+	               </td>
+	           </tr>
+	           <tr>
+	               <td style="vertical-align:top">
+	                   uwagi
+	               </td>
+	               <td>
+	                    <textarea name="uwagi" rows="10" cols="30">
+	                        Uwagi...
+	                    </textarea><br>
+	               </td>
+	           </tr>
+	           <tr>
+	               <td colspan="2">
+	                   
+	                   <input type="button" name ="p1" value="OK">
+	                   <input type="reset" name ="p2" value="Czyść">
+	                   <input type="submit" name ="p3" value="Wyślij">
+	                   <input type="hidden" name ="ukryte" value="0">
+	               </td>
+                   <td>
+
+	               </td>
+	           </tr>
+	       </table>
+	       
+	       
+	       
+	   </form>
+	   </td>
+	   </tr>
+	   </table>
+	   <br>
+	   
+	   <p>
+		    <a href="http://validator.w3.org/check?uri=referer">
+		        <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88">
+		    </a>
+		</p>
+
+	</body>
+</html>

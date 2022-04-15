@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+	    <style>
+	    
+	    button
+	    {
+	        width:50px;
+	        height:50px;
+	        
+	    }
+	    </style>
+	    
+	    <script type="text/javascript">
+	    
+	    
+	        function zmienznak()
+	        {
+	            var element = document.getElementById("ekran");
+	            var nowy = "-(";
+	            nowy += element.innerHTML;
+	            element.innerHTML = nowy;
+	            element.innerHTML += ")"
+	        }
+	        
+	        function dopisz0()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += 0
+	        }
+	        function dopisz1()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += 1
+	        }
+	        function dopisz2()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += 2
+	        }
+	        function dopisz3()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += 3
+	        }
+	        function dopisz4()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += 4
+	        }
+	        function dopisz5()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += 5
+	        }
+	        function dopisz6()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += 6
+	        }
+	        function dopisz7()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += 7
+	        }
+	        function dopisz8()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += 8
+	        }
+	        function dopisz9()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += 9
+	        }
+	        
+	        
+	        function dopiszDziel()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += "/"
+	        }
+	        
+	        
+	        
+	        function dopiszKropke()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += "."
+	        }
+	        
+	        function dopiszRazy()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += "*"
+	        }
+	        function dopiszMinus()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += "-"
+	        }
+	        function dopiszPlus()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += "+"
+	        }
+	        
+	        function dopiszNawiasO()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += "("
+	        }
+	        
+	        function dopiszNawiasZ()
+	        {
+	            var element = document.getElementById("ekran");
+	            element.innerHTML += ")"
+	        }
+	        
+	        function Licz()
+	        {
+	            var element = document.getElementById("ekran");
+	            var text = element.innerHTML;
+	            element.innerHTML = eval(text);
+	            
+	            if(element.innerHTML == text)
+	            {
+	                element.innerHTML = ".";
+	            }
+	        }
+	        
+	        function UndefinedToString(x)
+	        {
+	            var napis = "undefined";
+	            var result="";
+	            for(var i=9;i<x.length;i++)
+	            {
+	                result += x[i];
+	            }
+	            return result;
+	        }
+	        
+	        function Usun()
+	        {
+	            var element = document.getElementById("ekran");
+	            var wzor = element.innerHTML;
+	            var wzor2 = "";
+	            for (var i = 0; i < wzor.length -1; i++) {
+                 wzor2 += wzor[i];
+                }
+                element.innerHTML = wzor2;
+	        }
+	        
+	        
+	    
+	    </script>
+		<meta charset="UTF-8">
+		<title>MateuszPiwowarski200862</title>
+		
+		
+		
+	</head>
+	
+	<body>
+	    <table border="1px">
+	        <tr  height="30">
+	            <td id="ekran" colspan="5"></td>
+
+	        </tr>
+	        <tr>
+	            <td><button onclick="dopiszDziel()">/</button></td>
+	            <td><button onclick="dopisz7()">7</button></td>
+	            <td><button onclick="dopisz8()">8</button></td>
+	            <td><button onclick="dopisz9()">9</button></td>
+	            <td><button onclick="Usun()"><=</button></td>
+	        </tr>
+	        <tr>
+	            <td><button onclick="dopiszRazy()">x</button></td>
+	            <td><button onclick="dopisz4()">4</button></td>
+	            <td><button onclick="dopisz5()">5</button></td>
+	            <td><button onclick="dopisz6()">6</button></td>
+	            <td><button onclick="dopiszNawiasO()">(</button></td>
+	        </tr>
+	        <tr>
+	            <td><button onclick="dopiszMinus()">-</button></td>
+	            <td><button onclick="dopisz1()">1</button></td>
+	            <td><button onclick="dopisz2()">2</button></td>
+	            <td><button onclick="dopisz3()">3</button></td>
+	            <td><button onclick="dopiszNawiasZ()">)</button></td>
+	        </tr>
+	        <tr>
+	            <td><button onclick="dopiszPlus()">+</button></td>
+	            <td><button onclick="dopiszKropke()">.</button></td>
+	            <td><button onclick="dopisz0()">0</button></td>
+	            <td><button onclick="zmienznak()">+/-</button></td>
+	            <td><button onclick="Licz()">=</button></td>
+	        </tr>
+	        </table>
+	</body>
+</html>
